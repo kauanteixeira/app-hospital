@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --color-white: #ffffff;
+  --color-gray: #e0e0e0;
+  --situation: #33ff00;
+  --background-color: #76BFAC;
+  --buttons-color: #506175;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 65px;
+  background-color: var(--background-color);
+}
+
+#logo{
+  font-size: 25px;
+  color: var(--color-white);
+}
+
+/* #nav-bar{
+
+} */
+
+#nav-bar a{
+  text-decoration: none;
+  color: var(--color-white);
+  margin: 15px;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#title{
+  color: var(--background-color);
+}
+
+#hospitals{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.card-hospitals{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-hospitals img{
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+}
+
+.situation-hospitals{
+  display: flex;
+}
+
+.situation_santa_clara, 
+.situation_sao_sebastiao, 
+.situation_guanabara, 
+.situation_leporace{
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-color: var(--situation);
+  clip-path: circle();
+}
+
+.info-hospital{
+  width: 700px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.imagem{
+  display: flex;
+  align-items: center;
+}
+
+.info-address{
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.icon-time{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.icon-time img {
+  width: 25px;
+  height: 25px;
+}
+
+.user-distance{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.icon-user{
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.icon-user img {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-marker{
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.icon-marker img {
+  width: 25px;
+  height: 25px;
+}
+
+.divider{
+  width: 100%;
+  height: 2px;
+  margin: 30px;
+  background: linear-gradient(2deg, var(--color-white), var(--background-color));
+}
+
+@media screen and (max-width: 400px)
+{
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --color-white: #ffffff;
+  --color-gray: #e0e0e0;
+  --situation: #33ff00;
+  --background-color: #76BFAC;
+  --buttons-color: #506175;
+}
+
+#header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+  height: 65px;
+  background-color: var(--background-color);
+}
+
+#logo{
+  font-size: 25px;
+  color: var(--color-white);
+}
+
+#nav-bar{
+  display: none;
+}
+
+#main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#title{
+  color: var(--background-color);
+}
+
+#hospitals{
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+.card-hospitals{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 10px;
+}
+
+.card-hospitals img{
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+.situation-hospitals{
+  display: flex;
+}
+
+.situation_santa_clara, 
+.situation_sao_sebastiao, 
+.situation_guanabara, 
+.situation_leporace{
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  margin-right: 5px;
+  background-color: var(--situation);
+  clip-path: circle();
+}
+
+.info-hospital{
+  width: 700px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.imagem{
+  display: flex;
+  align-items: center;
+}
+
+.info-address{
+  margin: 10px;
+  margin-left: 15px;
+}
+
+.icon-time{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.icon-time img {
+  width: 15px;
+  height: 15px;
+}
+
+.user-distance{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.icon-user{
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.icon-user img {
+  width: 15px;
+  height: 15px;
+}
+
+.icon-marker{
+  display: flex;
+  justify-content: start;
+  align-items: flex-end;
+}
+
+.icon-marker img {
+  width: 15px;
+  height: 15px;
+}
+}
