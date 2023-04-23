@@ -57,6 +57,7 @@ function count_people_leporace(){
     velocity.textContent = "Lento";
   };
 }
+
 count_people_leporace()
 count_people_guanabara()
 count_people_santa_clara()

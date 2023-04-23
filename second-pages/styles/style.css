@@ -1,0 +1,166 @@
+/*========== UBS SANTA CLARA ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #e0e0e0;
+  --situation: #33ff00;
+  --background-color: #76BFAC;
+  --buttons-color: #506175;
+}
+
+#description_hospital{
+  display: flex;
+  flex-direction: row;
+}
+
+.description_ubs{
+  width: 600px;
+  margin-left: 20px;
+}
+
+.hospital_name{
+  font-size: 30px;
+}
+
+#select_doctors{
+  width: 200px;
+  height: 25px;
+  border: solid 1px var(--buttons-color);
+  border-radius: 5px;
+}
+
+.doctors-attending{
+  font-weight: 700;
+}
+
+.icon-doctor{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.icon-doctor img {
+  width: 25px;
+  height: 25px;
+}
+
+.image_description{
+  width: 500px;
+  font-size: 13px;
+}
+
+.image_ubs img {
+  width: 500px;
+  border-style: solid;
+  border-width: 10px 10px 10px 10px;
+  border-color: var(--background-color);
+  border-radius: 5px 5px 5px 5px;
+  box-shadow: 10px 10px 7px 0px rgba(0, 0, 0, 0.3)
+}
+
+iframe {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1200px)
+{
+  #main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  } 
+
+  #description_hospital{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  figcaption{
+    display: none;
+  }
+
+  .description_ubs{
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .hospital_name{
+    font-size: 25px;
+  }
+  
+  .service-time{
+    font-size: 13px;
+  }
+
+  .address{
+    font-size: 13px;
+  }
+
+  .service-time{
+    font-size: 12px;
+  }
+
+  #select_doctors{
+    width: 200px;
+    height: 25px;
+    border: solid 1px var(--buttons-color);
+    border-radius: 5px;
+  }
+  
+  .doctors-attending{
+    font-weight: 700;
+  }
+  
+  .icon-doctor{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .doctors-attending{
+    font-size: 12px;
+  }
+  
+  .icon-doctor img {
+    width: 15px;
+    height: 15px;
+  }
+  .image_description{
+    width: 300px;
+  }
+
+  .image_ubs img {
+    width: 300px;
+    border-style: solid;
+    border-width: 5px 5px 5px 5px;
+    border-color: var(--background-color);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 10px 10px 7px 0px rgba(0, 0, 0, 0.3)
+  }
+  .info{
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+  }
+  iframe {
+    width: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+}

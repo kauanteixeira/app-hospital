@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>UBS Santa Clara</title>
+</head>
+<body>
+  <header id="header">
+    <span id="logo">
+      hospApp
+    </span>
+    <div id="nav-bar">
+      <a href="#" id="home">Home</a>
+      <a href="#" id="about">About</a>
+      <a href="#" id="contact">Contact</a>
+    </div>
+  </header>
+  <div id="main">
+      <h1 id="title">
+        Hospitais
+      </h1>
+      <small>
+        Franca-SP
+      </small>
+    <div class="divider"></div>
+    <div id="description_hospital">
+      <div class="image_description">
+        <figure class="image_ubs">
+          <img src="../assets/ubs-santa-clara.jpeg" alt="Imagem UBS Santa Clara">
+          <figcaption>O equipamento dispõe de uma ampla estrutura e tem capacidade de acolher até 4 mil pessoas/mês.</figcaption>
+        </figure>
+      </div>
+      <div class="description_ubs">
+        <h2 class="hospital_name">UBS Santa Clara</h2>
+        <p class="address">
+          R. Elécio Odilon de Paula - Chácaras São Paulo
+        </p>
+        <figure class="icon-doctor">
+          <img src="../assets/doctor-svgrepo-com.svg" alt="Imagem de Médico">
+          <select name="doctor-available" id="select_doctors">
+            <option value="selecione">Selecione</option>
+            <option value="clinicoGeral">Clínico geral</option>
+            <option value="pediatra">Pediatra</option>
+            <option value="neurologista">Neurologista</option>
+          </select>
+        </figure>
+        <span class="doctors-attending"></span>
+        <figure class="icon-time">
+          <img src="../assets/clock-svgrepo-com.svg" alt="Imagem de Relógio">
+          <span class="service-time">Atendimento: 15 min</span>
+        </figure>
+        <figure class="icon-user">
+          <img src="../assets/user-svgrepo-com.svg" alt="Imagem de Pessoa">
+          <span class="service-time"><span class="peoples_santa_clara">15</span><small>/</small>50</span>
+        </figure>
+        <br>
+        <span class="info">
+          Atendimento dos moradores do Santa Clara e diversos outros bairros adjacentes, entre eles Júlio D'Elia, Palmeiras, Copacabanas, Santa Maria, São Paulo, Santa Efigênia, entre outros.
+        </span>
+      </div>
+    </div>
+    <div id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3736.544852502239!2d-47.447343025589554!3d-20.524876357106688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b0a7a568339c55%3A0x5dc7ce43adf34058!2sUBS%20Santa%20Clara!5e0!3m2!1spt-BR!2sbr!4v1682274581448!5m2!1spt-BR!2sbr" width="1120px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
