@@ -67,11 +67,20 @@
   box-shadow: 10px 10px 7px 0px rgba(0, 0, 0, 0.3)
 }
 
-iframe {
+#map{
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
 @media screen and (max-width: 1200px)
+{
+  #description_hospital, #map{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 900px)
 {
   #main{
     display: flex;
@@ -81,11 +90,11 @@ iframe {
   } 
 
   #description_hospital{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 100%;
   }
 
   figcaption{
@@ -101,16 +110,8 @@ iframe {
     font-size: 25px;
   }
   
-  .service-time{
+  .service-time, .address{
     font-size: 13px;
-  }
-
-  .address{
-    font-size: 13px;
-  }
-
-  .service-time{
-    font-size: 12px;
   }
 
   #select_doctors{
@@ -131,7 +132,7 @@ iframe {
     margin-top: 15px;
   }
 
-  .doctors-attending{
+  .doctors-attending, .service-time{
     font-size: 12px;
   }
   
@@ -139,12 +140,13 @@ iframe {
     width: 15px;
     height: 15px;
   }
+
   .image_description{
-    width: 300px;
+    width: 100%;
   }
 
   .image_ubs img {
-    width: 300px;
+    width: 100%;
     border-style: solid;
     border-width: 5px 5px 5px 5px;
     border-color: var(--background-color);
@@ -158,7 +160,9 @@ iframe {
     align-items: center;
     text-align: justify;
   }
-  iframe {
+
+  #map{
+    width: 100%;
     width: 100%;
     height: 200px;
     margin-top: 20px;
