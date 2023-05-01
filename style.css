@@ -30,10 +30,6 @@
   color: var(--color-white);
 }
 
-/* #nav-bar{
-
-} */
-
 #nav-bar a{
   text-decoration: none;
   color: var(--color-white);
@@ -96,15 +92,11 @@
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
-.card{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
+.card, 
 .imagem{
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .info-address{
@@ -113,15 +105,7 @@
 }
 
 .icon-time{
-  display: flex;
-  justify-content: start;
-  align-items: center;
   margin-top: 5px;
-}
-
-.icon-time img {
-  width: 25px;
-  height: 25px;
 }
 
 .user-distance{
@@ -132,24 +116,17 @@
   margin-top: 15px;
 }
 
-.icon-user{
+.icon-user,
+.icon-marker,
+.icon-time{
   display: flex;
   justify-content: start;
   align-items: flex-end;
 }
 
-.icon-user img {
-  width: 25px;
-  height: 25px;
-}
-
-.icon-marker{
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-}
-
-.icon-marker img {
+.icon-user img, 
+.icon-marker img, 
+.icon-time img{
   width: 25px;
   height: 25px;
 }
@@ -161,7 +138,10 @@
   background: linear-gradient(2deg, var(--color-white), var(--background-color));
 }
 
-.page_santa_clara, .page_sao_sebastiao, .page_guanabara, .page_leporace{
+.page_santa_clara,
+.page_sao_sebastiao,
+.page_guanabara,
+.page_leporace{
   width: 100%;
   display: flex;
   align-items: center;
@@ -172,117 +152,62 @@
 
 @media screen and (max-width: 1200px)
 {
-#nav-bar{
-  display: none;
-}
+  
+  #main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+  }
+  
+  #nav-bar{
+    display: none;
+  }
 
-#main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 15px;
-}
+  #hospitals{
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .card-hospitals{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 10px;
+  }
 
-#hospitals{
-  width: 100%;
-  display: block;
-  margin: 0;
-}
-.card-hospitals{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 20px;
-  font-size: 10px;
-}
+  .card-hospitals img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100px;
+  }
 
-.card-hospitals img{
-  width: 75px;
-  height: 75px;
-  border-radius: 100px;
-}
+  
 
-.situation-hospitals{
-  display: flex;
-}
+  .situation_santa_clara, 
+  .situation_sao_sebastiao, 
+  .situation_guanabara, 
+  .situation_leporace{
+    width: 15px;
+    height: 15px;
+    margin-top: 0;
+    margin-right: 5px;
+    background-color: var(--situation);
+    clip-path: circle();
+  }
 
-.situation_santa_clara, 
-.situation_sao_sebastiao, 
-.situation_guanabara, 
-.situation_leporace{
-  width: 15px;
-  height: 15px;
-  margin-top: 0;
-  margin-right: 5px;
-  background-color: var(--situation);
-  clip-path: circle();
-}
+  .info-hospital{
+    width: 700px;
+    padding: 10px;
+  }
 
-.info-hospital{
-  width: 700px;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
-}
-
-.card{
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-.imagem{
-  display: flex;
-  align-items: center;
-}
-
-.info-address{
-  margin: 10px;
-  margin-left: 15px;
-}
-
-.icon-time{
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  margin-top: 5px;
-}
-
-.icon-time img {
-  width: 15px;
-  height: 15px;
-}
-
-.user-distance{
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-}
-
-.icon-user{
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-}
-
-.icon-user img {
-  width: 15px;
-  height: 15px;
-}
-
-.icon-marker{
-  display: flex;
-  justify-content: start;
-  align-items: flex-end;
-}
-
-.icon-marker img {
-  width: 15px;
-  height: 15px;
-}
+  .icon-user img,
+  .icon-marker img,
+  .icon-time img {
+    width: 15px;
+    height: 15px;
+  }
 }

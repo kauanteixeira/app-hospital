@@ -73,14 +73,14 @@
   margin-top: 20px;
 }
 
-@media screen and (max-width: 1200px)
+@media (max-width: 1200px)
 {
   #description_hospital, #map{
     width: 100%;
   }
 }
 
-@media screen and (max-width: 900px)
+@media (max-width: 900px)
 {
   #main{
     display: flex;
@@ -110,29 +110,13 @@
     font-size: 25px;
   }
   
-  .service-time, .address{
+  .service-time,
+  .address{
     font-size: 13px;
   }
 
-  #select_doctors{
-    width: 200px;
-    height: 25px;
-    border: solid 1px var(--buttons-color);
-    border-radius: 5px;
-  }
-  
-  .doctors-attending{
-    font-weight: 700;
-  }
-  
-  .icon-doctor{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-top: 15px;
-  }
-
-  .doctors-attending, .service-time{
+  .doctors-attending,
+  .service-time{
     font-size: 12px;
   }
   
@@ -141,18 +125,11 @@
     height: 15px;
   }
 
-  .image_description{
+  .image_description,
+  .image_ubs img{
     width: 100%;
   }
 
-  .image_ubs img {
-    width: 100%;
-    border-style: solid;
-    border-width: 5px 5px 5px 5px;
-    border-color: var(--background-color);
-    border-radius: 5px 5px 5px 5px;
-    box-shadow: 10px 10px 7px 0px rgba(0, 0, 0, 0.3)
-  }
   .info{
     font-size: 13px;
     display: flex;
@@ -161,10 +138,10 @@
     text-align: justify;
   }
 
-  #map{
+  #map, iframe{
     width: 100%;
     width: 100%;
-    height: 200px;
-    margin-top: 20px;
+    height: 225px;
+    margin: 20px 0 20px 0;
   }
 }
